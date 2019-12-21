@@ -1,0 +1,41 @@
+@import 'reuse';
+
+.card-container {
+  grid-column: 2/3;
+  width: 32vw;
+  height: 16vw;
+  border: .1rem solid $char;
+  border-radius: 1rem;
+  margin-bottom: $row-gap;
+
+  display: grid;
+
+  grid-template-rows: 25% 30% 30% 25%;
+  grid-template-columns: 1rem 20% auto 1rem;
+}
+
+.f-l-name {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.companyName {
+  grid-column: 3;
+  grid-row: 2/3;
+  align-self: end;
+}
+
+.emailAddress {
+  grid-row: 3/4;
+  grid-column: 2;
+  align-self: end;
+  justify-self: start;
+}
+
+.phoneNumber {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  align-self: end;
+  justify-self: end;
+}

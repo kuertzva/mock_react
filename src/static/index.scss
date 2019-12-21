@@ -1,0 +1,50 @@
+@import 'reuse';
+
+:root {
+  font-size: 1vw;
+}
+
+body {
+  width: 100vw;
+  overflow: visible;
+}
+
+* {
+  color: $char;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  /*border: 1px dashed red;*/
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+button {
+  @include click_dim()
+  background-color: $blurp;
+  border-width: 0px;
+  font-size: .8rem;
+  color: white;
+  //align-content: center;
+
+  .inner-button {
+    color: inherit;
+    text-align: left;
+  }
+
+  .cross {
+    float: left;
+    color: inherit;
+    width: 20%;
+    text-align: center;
+  }
+}
+
+button:hover {
+  background-color: $yella;
+}

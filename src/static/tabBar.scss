@@ -1,0 +1,23 @@
+@import 'reuse';
+
+#tabBar {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: .1rem solid $faint;
+
+
+  p {
+    width: $click-width;
+    text-align: center;
+  }
+  p.active-tab {
+      border-bottom: .1rem solid $blurp;
+  }
+
+  p.first {
+      color: $blurp;
+  }
+}

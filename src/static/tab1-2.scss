@@ -1,0 +1,11 @@
+@import 'reuse';
+
+#tab1 {
+  display: grid;
+  grid-template-columns: 24vw auto 24vw;
+
+  button {
+    grid-column: 2/3;
+    justify-self: end;
+  }
+}

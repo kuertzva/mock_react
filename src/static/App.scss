@@ -1,0 +1,13 @@
+@import 'reuse';
+
+#frame {
+  display: grid;
+  grid-template-columns: $margin-width $content-width $margin-width;
+  grid-template-rows: $header-height auto $tab-bar-height auto;
+  grid-row-gap: $row-gap;
+}
+
+#tab-contents {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}

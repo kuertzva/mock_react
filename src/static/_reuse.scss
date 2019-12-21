@@ -1,0 +1,27 @@
+// VARIABLES
+
+//  size
+$margin-width: 10vw;
+$content-width: 100vw - (2 * $margin-width);
+$header-height: 20vh;
+$description-height: 45vh;
+$tab-bar-height: 5vh;
+$row-gap: 5vh;
+$click_width: 12vw;
+$click_height: 5vh;
+$click_corner: .2rem;
+
+
+// colors
+$blurp: #6200ee;
+$char: #414346;
+$lil: #ebdefd;
+$faint: #efefef;
+$yella: #d8b60b;
+
+// MIXINS
+@mixin click_dim() {
+  width: $click_width;
+  height: $click_height;
+  border-radius: $click_corner;
+}

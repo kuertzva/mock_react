@@ -1,0 +1,17 @@
+@import 'reuse';
+
+#header {
+  place-self: stretch;
+  display: block;
+  height: 100%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: $blurp;
+
+  h1 {
+    color: $lil;
+    font-size: 3rem;
+    margin-top: $header-height * .4;
+    margin-left: $margin-width;
+  }
+}
